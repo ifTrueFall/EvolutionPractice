@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E☕%3C/text%3E%3C/svg%3E" />
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='-27' y='75' font-family='Courier' font-size='117' fill='%23000'%3E☕%3C/text%3E%3C/svg%3E" />
     <link href="src/bc.css" rel="stylesheet">
-    <meta name="description" content="Just a few end of class quiz questions and practice">
+    <meta name="description" content="Comparing bones with canvas">
     <nav>
         <ul>
             <li><a href="index.html">Quiz</a></li>
@@ -18,408 +18,76 @@
 </head>
 
 <body>
-    <h1>Practice Quiz</h1>
-    <div class="Cquestions">
-        <div class="question-container">
-            <div id="question1">
-                <p>Q1. We spoke about Radioactive dating, regarding carbon dating, why couldn't we use a fossil that is over a million years old? </p>
-                <ul>
-                    <input type="radio" id="answer1a" name="question1" value="a"> A. Overtime Carbon-14 converts to Nitrogen-14
-                    <br />
-                    <input type="radio" id="answer1b" name="question1" value="b"> B. Overtime Carbon-14 converts back into carbon-13
-                    <br />
-                    <input type="radio" id="answer1c" name="question1" value="c"> C. Carbon becomes too unstable and shifts to a radioactive isotope that cannot be read
-                    <br />
-                    <input type="radio" id="answer1d" name="question1" value="d"> D. Overtime Carbon bonds to nearby elements, making the reading unaccurate
-                    <br />
-                </ul>
-                <p id="feedback1"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question2">
-                <p>Q2. Alpha decay relates to the production of alpha particles, What can of atoms would be produced in an alpha particle?
-                </p>
-                <ul>
-                    <input type="radio" id="answer2a" name="question2" value="a"> A. 1 proton, 2 neutrons<br />
-                    <input type="radio" id="answer2b" name="question2" value="b"> B. 6 protons, 7 neutrons<br />
-                    <input type="radio" id="answer2c" name="question2" value="c"> C. 2 protons, 2 electrons<br />
-                    <input type="radio" id="answer2d" name="question2" value="d"> D. 2 proton, 2 neutrons<br />
-                </ul>
-                <p id="feedback2"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question3">
-                <p>Q3.If we have fossils that are beyond millions of years of age, how do we age them then?</p>
-                <ul>
-                    <input type="radio" id="answer3a" name="question3" value="a"> A. We can calculate when the fossil converted to its new form.
-                    <br />
-                    <input type="radio" id="answer3b" name="question3" value="b"> B. We can carbon-date the rocks around the fossil
-                    <br />
-                    <input type="radio" id="answer3c" name="question3" value="c"> C. Based on the remaining carbon that hasn't converted
-                    <br />
-                    <input type="radio" id="answer3d" name="question3" value="d"> D. We age the rocks around the fossils using a mass spectrometer
-                    <br />
-                </ul>
-                <p id="feedback3"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question4">
-                <p>Q4. Understanding that fossils are remains, how are two ways they remain <u>fully</u> intact?
-					</p>
-                <ul>
-                    <input type="radio" id="answer4a" name="question4" value="a"> A. Freezing and Calcification<br />
-                    <input type="radio" id="answer4b" name="question4" value="b"> B. The fossil get buried in sediment<br />
-                    <input type="radio" id="answer4c" name="question4" value="c"> C. It's impossible to remain fully in tact<br />
-                    <input type="radio" id="answer4d" name="question4" value="d"> D. Freezing and Amber<br />
-                </ul>
-                <p id="feedback4"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question5">
-                <p>Q5. Fossils left unintact lose their 'soft parts', and the resistant parts remain, which are?
-				</p>
-                <ul>
-                    <input type="radio" id="answer5a" name="question5" value="a"> A. only bones
-					<br />
-                    <input type="radio" id="answer5b" name="question5" value="b"> B. exoskeletons
-					<br />
-                    <input type="radio" id="answer5c" name="question5" value="c"> C. only bones and keratin products: hair, nails, claws
-					<br />
-                    <input type="radio" id="answer5d" name="question5" value="d"> D. bones, teeth, exoskeleteon, hair, claws, spore, and pollen walls, silica
-					<br />
-                </ul>
-                <p id="feedback5"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question6">
-                <p>Q6. Resistant parts can have one of two things happen, dissolve or molecular modification <br />
-				We know dissolving leads to either a cast or an impression. What are the three molecular modifications?
-				</p>
-                <ul>
-                    <input type="radio" id="answer6a" name="question6" value="a"> A. Petrification, Silicification, Fossilization 
-					<br />
-                    <input type="radio" id="answer6b" name="question6" value="b"> B. Carbonization, Permineralization, Recrystalization
-					<br />
-                    <input type="radio" id="answer6c" name="question6" value="c"> C. Replacement, Impregnation, Pyritization
-					<br />
-                    <input type="radio" id="answer6d" name="question6" value="d"> D. Encapsulation, Diagenesis, Alteration
-					<br />
-                </ul>
-                <p id="feedback6"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question7">
-                <p>Q7. Understanding that each large segment of history is referred as either a era or period, we know we cannot specify less than 100-million years between each, starting at Cambrian. <br />
-				Pre-Cambrian, was some time before Cambrian(500+ myr ago), obviously bacteria will always be the main group, but what other groups were prominent?
-				</p>
-                <ul>
-                    <input type="radio" id="answer7a" name="question7" value="a"> A. only prokaryotes
-					<br />
-                    <input type="radio" id="answer7b" name="question7" value="b"> B. arthropoda, fungi, mollusk, crustaceans
-					<br />
-                    <input type="radio" id="answer7c" name="question7" value="c"> C. reptiles, nonvascular plants, fish
-					<br />
-                    <input type="radio" id="answer7d" name="question7" value="d"> D. protist, algae, Cnidaria, porifera(sponges)
-					<br />
-                </ul>
-                <p id="feedback7"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question8">
-                <p>Q8. Describe the major appearances and characteristics of organisms during the Cambrian period.
-					</p>
-                <ul>
-                    <input type="radio" id="answer8a" name="question8" value="a"> A. Appearance of angiosperms and mammals
-					<br />
-                    <input type="radio" id="answer8b" name="question8" value="b"> B. Dominance of trilobites and brachiopods w/ Calcium carbonate structures
-					<br />
-                    <input type="radio" id="answer8c" name="question8" value="c"> C. Emergence of vertebrates with real bones
-					<br />
-                    <input type="radio" id="answer8d" name="question8" value="d"> D. Extinction of prokaryotes
-					<br />
-                </ul>
-                <p id="feedback8"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question9">
-                <p>Q9. The Ordovician (400 to 500 myr) period, had the first extinction evemt something of 23% of all familes, and 50% of all species. <br />
-				This allowed for the appearance of new species, and change in some of the prominent species, which was:
-                </p>
-                <ul>
-                    <input type="radio" id="answer9a" name="question9" value="a"> A. Extinction of mammals and flowering plants <br />
-                    <input type="radio" id="answer9b" name="question9" value="b"> B. Appearance of fungi and jawless fish w/ notochords <br />
-                    <input type="radio" id="answer9c" name="question9" value="c"> C. Emergence of birds and reptiles <br />
-                    <input type="radio" id="answer9d" name="question9" value="d"> D. Dominance of dinosaurs and insects<br />
-                </ul>
-                <p id="feedback9"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question10">
-                <p>Q10. Notochords were the first signs leading to bony structures, in Silurian this formation was refined. <br />
-				the species of this period still have descendants: liverworts, seedless and nonvascular <br />
-				List the key developments during the Silurian period, particularly regarding the evolution of vertebrates and plant life.
-				</p>
-                <ul>
-                    <input type="radio" id="answer10a" name="question10" value="a"> A. Appearance of real bones and flying animals
-					<br />
-                    <input type="radio" id="answer10b" name="question10" value="b"> B. First appearance of plant bodies and fish with bones
-					<br />
-                    <input type="radio" id="answer10c" name="question10" value="c"> C. Emergence of reptiles and birds
-					<br />
-                    <input type="radio" id="answer10d" name="question10" value="d"> D. Extinction of trilobites and brachiopods
-					<br />
-                    <p id="feedback10"></p>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question11">
-                <p>Q11. Describe the significant events and evolutionary milestones during the Devonian period, including the emergence of terrestrial animals.
-				</p>
-                <ul>
-                    <input type="radio" id="answer11a" name="question11" value="a"> A. First terrestrial animals and winged insects, vascular plants <br />
-                    <input type="radio" id="answer11b" name="question11" value="b"> B. Extinction of marine organisms <br />
-                    <input type="radio" id="answer11c" name="question11" value="c"> C. Appearance of mammals and angiosperms <br />
-                    <input type="radio" id="answer11d" name="question11" value="d"> D. Elongation of neck and limbs of lizards, with feather development <br />
-                    <p id="feedback11"></p>
-                </ul>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question12">
-                <p>Q12. We knew that fish remained a dominant species within the Devonian period. What were the transitions of bony structures? <br />
-                </p>
-                <ul>
-                    <input type="radio" id="answer12a" name="question12" value="a"> A. Elongation of the spinal column for increased flexibility
-					<br />
-                    <input type="radio" id="answer12b" name="question12" value="b"> B. Fusion of jawbones to enhance feeding efficiency, basal bones elongation to form armor
-					<br />
-                    <input type="radio" id="answer12c" name="question12" value="c"> C. Pelvis attached to spine; Basal fins seperate fin rays, disappear and form jointed digits 
-					<br />
-                    <input type="radio" id="answer12d" name="question12" value="d"> D. Development of cartilaginous fins, pelvis attach to spine
-					<br />
-                    <p id="feedback12"></p>
-                </ul>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question13">
-                <p>Q13. What was the dominant type of plants during the Carboniferous period?
-                </p>
-                <ul>
-                    <input type="radio" id="answer13a" name="question13" value="a"> A. Extinction of insects and gymnosperms
-					<br />
-                    <input type="radio" id="answer13b" name="question13" value="b"> B. Gymnosperms
-					<br />
-                    <input type="radio" id="answer13c" name="question13" value="c"> C. Flowering plants
-					<br />
-                    <input type="radio" id="answer13d" name="question13" value="d"> D. Dominance of seedless vascular plants and insects
-					<br />
-                    <p id="feedback13"></p>
-                </ul>
-            </div>
-        </div>
-
-        <div class="question-container">
-            <div id="question14">
-                <p>Q14. Which of the following reptiles is considered one of the first fossils discovered from the Carboniferous period?</p>
-                <ul>
-                    <input type="radio" id="answer14a" name="question14" value="a"> A. Triceratops
-					<br />
-                    <input type="radio" id="answer14b" name="question14" value="b"> B. Tyrannosaurus rex
-					<br />
-                    <input type="radio" id="answer14c" name="question14" value="c"> C. Hylonomus
-					<br />
-                    <input type="radio" id="answer14d" name="question14" value="d"> D. Stegosaurus
-					<br />
-                    <p id="feedback14"></p>
-                </ul>
-            </div>
-
+    <div class="ChimpvsHuman">
+        <h1>Chimp vs Human</h1>
+		<p> Closest relative are, gorilla, chimpanzees, orangutans, with chimpanzees being the most closest to the hominin decendancy </p>
+        <div class="Cquestions">
             <div class="question-container">
-                <div id="question15">
-                    <p>Q15. During which geological period was the largest recorded extinction event occur?
-					80% Terrestial and 95% of marine species
-					</p>
+                <div id="question1">
+                    <p>Q1. True or false; Hominid, is human ancestory up to and including apes. <br /> Hominin, is Human ancestor after seperation of the chimps </p>
                     <ul>
-                        <input type="radio" id="answer15a" name="question15" value="a"> A. Triassic
-						<br />
-                        <input type="radio" id="answer15b" name="question15" value="b"> B. Jurassic
-						<br />
-                        <input type="radio" id="answer15c" name="question15" value="c"> C. Permian
-						<br />
-                        <input type="radio" id="answer15d" name="question15" value="d"> D. Carboniferous
-						<br />
-                        <p id="feedback15"></p>
+                        <input type="radio" id="answer1a" name="question1" value="a"> A. True
+                        <br />
+                        <input type="radio" id="answer1b" name="question1" value="b"> B. False
+                        <br />
                     </ul>
-                </div>
-
-                <div class="question-container">
-                    <div id="question16">
-                        <p>Q16. What were the dominant organisms on land during the Permian period?
-                        </p>
-                        <ul>
-                            <input type="radio" id="answer16a" name="question16" value="a"> A. seedles vascular plants, insects, and diversifying reptiles
-							<br />
-                            <input type="radio" id="answer16b" name="question16" value="b"> B. 
-							<br />
-                            <input type="radio" id="answer16c" name="question16" value="c"> C. 
-							<br />
-                            <input type="radio" id="answer16d" name="question16" value="d"> D. 
-							<br />
-                            <p id="feedback16"></p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="question-container">
-                    <div id="question17">
-                        <p>Q17. What is the major regulated step of fatty acid synthesis? </p>
-                        <ul>
-                            <input type="radio" id="answer17a" name="question17" value="a"> A. Malonyl-CoA Decarboxylase
-                            <br />
-                            <input type="radio" id="answer17b" name="question17" value="b"> B. Fatty Acid Synthase (FAS)
-                            <br />
-                            <input type="radio" id="answer17c" name="question17" value="c"> C. Acetyl-CoA Carboxylase
-                            (ACC) <br />
-                            <input type="radio" id="answer17d" name="question17" value="d"> D. Carnitine
-                            Palmitoyltransferase I (CPT-I) <br />
-                            <p id="feedback17"></p>
-                        </ul>
-                    </div>
-                </div>
-                <div class="question-container">
-                    <div id="question18">
-                        <p>Q18. What electron carrier mediates the action of beta-ketoacyl-ACP reductase? Why does this
-                            make sense?</p>
-                        <ul>
-                            <input type="radio" id="answer18a" name="question18" value="a"> A. NADPH. NADPH is usually
-                            involved in anabolic events <br />
-                            <input type="radio" id="answer18b" name="question18" value="b"> B. ATP. ATP provides energy
-                            for biochemical reactions <br />
-                            <input type="radio" id="answer18c" name="question18" value="c"> C. FADH₂. FADH₂ is often
-                            involved in redox reactions <br />
-                            <input type="radio" id="answer18d" name="question18" value="d"> D. NADH. NADH is primarily
-                            involved in catabolic reactions <br />
-                            <p id="feedback18"></p>
-                        </ul>
-                    </div>
-                </div>
-                <div class="question-container">
-                    <div id="question19">
-                        <p>Q19. What problem would arise if the excess acetyl~CoA were not converted to ketone bodies? </p>
-                        <ul>
-                            <input type="radio" id="answer19a" name="question19" value="a"> A. Excess acetyl-CoA would
-                            inhibit the activity of citrate synthase, reducing flux through the citric acid cycle.
-                            <br />
-                            <input type="radio" id="answer19b" name="question19" value="b"> B. Fatty acid oxidation
-                            would stop if all of the CoA is bound as acetyl~CoA <br />
-                            <input type="radio" id="answer19c" name="question19" value="c"> C. Accumulation of
-                            acetyl-CoA would lead to increased synthesis of cholesterol, impacting cellular membrane
-                            fluidity and integrity. <br />
-                            <input type="radio" id="answer19d" name="question19" value="d"> D. Accumulation of
-                            acetyl-CoA would inhibit the activity of pyruvate carboxylase, reducing the production of
-                            oxaloacetate for the citric acid cycle. <br />
-                            <p id="feedback19"></p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="question-container">
-                    <div id="question20">
-                        <p>Q20. Where does fatty acid degradation occur in the cell?</p>
-                        <ul>
-                            <input type="radio" id="answer20a" name="question20" value="a"> A. Cytosol <br />
-                            <input type="radio" id="answer20b" name="question20" value="b"> B. Mitochondria <br />
-                            <input type="radio" id="answer20c" name="question20" value="c"> C. Peroxisomes <br />
-                            <input type="radio" id="answer20d" name="question20" value="d"> D. Endoplasmic Reticulum
-                            <br />
-                            <p id="feedback20"></p>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="question-container">
-                    <div id="question21">
-                        <p>Q21. fatty acids are synthesized from acetyl-CoA</p>
-                        <ul>
-                            <input type="radio" id="answer21a" name="question21" value="a"> A. Mitochondria <br />
-                            <input type="radio" id="answer21b" name="question21" value="b"> B. Endoplasmic Reticulum
-                            <br />
-                            <input type="radio" id="answer21c" name="question21" value="c"> C. Cytosol <br />
-                            <input type="radio" id="answer21d" name="question21" value="d"> D. Peroxisomes <br />
-                            <p id="feedback21"></p>
-                        </ul>
-
-                    </div>
+                    <p id="feedback1"></p>
                 </div>
             </div>
-            <br /><br /><br />
-
-            <script>
-
-                function handleAnswerSelection(questionId, correctAnswer) {
-                    const questionElement = document.getElementById(questionId);
-                    const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
-                    const feedbackElement = questionElement.querySelector('p[id^="feedback"]');
-
-                    for (const radioButton of radioButtons) {
-                        radioButton.addEventListener('click', () => {
-                            if (radioButton.value === correctAnswer) {
-                                feedbackElement.textContent = "Correct!";
-                            } else {
-                                feedbackElement.textContent = "Incorrect. Please try again.";
-                            }
-                        });
-                    }
-                }
-                // Call the function for each question; this tells the script this answer is correct else other choices are incorrect
-                handleAnswerSelection("question1", "a");
-                handleAnswerSelection("question2", "d");
-                handleAnswerSelection("question3", "d");
-                handleAnswerSelection("question4", "d");
-                handleAnswerSelection("question5", "d");
-                handleAnswerSelection("question6", "b");
-                handleAnswerSelection("question7", "d");
-                handleAnswerSelection("question8", "b");
-                handleAnswerSelection("question9", "a");
-                handleAnswerSelection("question10", "b");
-                handleAnswerSelection("question11", "a");
-                handleAnswerSelection("question12", "c");
-                handleAnswerSelection("question13", "d");
-                handleAnswerSelection("question14", "c");
-                handleAnswerSelection("question15", "c");
-                handleAnswerSelection("question16", "a");
-                handleAnswerSelection("question17", "c");
-                handleAnswerSelection("question18", "a");
-                handleAnswerSelection("question19", "b");
-                handleAnswerSelection("question20", "b");
-                handleAnswerSelection("question21", "c");
-
-
-            </script>
+        <div class="side-by-side-container" style="display: flex;">
+            <div class="canvas-container" style="border: 1px solid black; box-shadow: 1px; width: 50%; height: 550px; float: left;"> 
+                    <img src="src/chimpAndHum.jpg" alt="bones compare" style="width: 100%; height: 100%;">
+            </div>
+            <div class="list" style="border: 1px solid black; box-shadow: 1px; width: 50%; height: 550px; float: right;">
+                <h2>Bipedalism</h2>
+                <ul>
+                    <li><u>Pelvis</u> <br/>
+						Chimp, flat and tall
+						Humans, Bowl-shaped and short top view
+					</li><br />
+                    <li><u>Hip sockets</u> <br />
+					Chimps, face outward<br />
+						Humans, angled downard
+					</li><br />
+                    <li><u>Knee join</u> <br />
+					chimp, The median plane of the femur bone is close to a 90 degree angle based on the socket of the pelvis<br />
+						humans, The median plane of the femur bone is further from 90 degrees based on the socket of the pelvis
+					</li><br />
+                    <li><u>Foramen magnum</u>, the opening to the cranium that connects to the spinal cord <br />
+					chimp, more slanted to the back of the skull <br />
+						humans, toward the bottom of the skull
+					</li><br />
+                    <li><u>Thumb length</u>, relative to the middle finger <br />
+					chimp, <= 40% of middle finger <br />
+					humans, >= 50% of the middle finger 
+					</li>
+                </ul>
+            </div>  
+        </div>
+    </div>
 </body>
-<footer>
-    <p></p>
-</footer>
+
+    <footer>
+        <p></p>
+    </footer>
+<script>
+    function handleAnswerSelection(questionId, correctAnswer) {
+                        const questionElement = document.getElementById(questionId);
+                        const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
+                        const feedbackElement = questionElement.querySelector('p[id^="feedback"]');
+
+                        for (const radioButton of radioButtons) {
+                            radioButton.addEventListener('click', () => {
+                                if (radioButton.value === correctAnswer) {
+                                    feedbackElement.textContent = "Correct!";
+                                } else {
+                                    feedbackElement.textContent = "Incorrect. Please try again.";
+                                }
+                            });
+                        }
+                    }
+    handleAnswerSelection("question1", "a");
+</script>
+</body>
+
 </html>
