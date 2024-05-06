@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>BioChem Practice</title>
+    <title>Evolution Practice</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml"
@@ -18,36 +18,32 @@
 </head>
 
 <body>
-    <h1>Citric Acid</h1>
-    <div class="video-container">
-        <video width="540" height="440" controls>
-            <source src="src/CitricAcid.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div class="canvas-container">
-        <canvas id="drawArea" width="520" height="540"></canvas>
-        <div class="buttons-container">
-            <button id="clear">clear</button>
-            <button id="undo">undo</button>
+    <div class="ChimpvsHuman">
+        <h1>Chimp vs Human</h1>
+        <div class="side-by-side-container" style="display: flex;">
+            <div class="canvas-container" style="border: 1px solid black; box-shadow: 1px; width: 50%; height: 550px;">
+                <div class="buttons-container" style="display: flex; border: 5px solid black; box-shadow: 1lvb;">
+                    <button id="undo">undo</button>
+                
+                <canvas id="drawArea" width="600" height="1000"></canvas>
+                </div>
+            </div>
+            <div class="list" style="border: 1px solid black; box-shadow: 1px; width: 50%; height: 550px;">
+                <h2>Enzymes</h2>
+                <ul>
+                    <li>Citrate</li>
+                    <li>Aconitase</li>
+                    <li>Isocitrate</li>
+                    <li>Alpha</li>
+                    <li>Succinyl</li>
+                    <li>Succinate</li>
+                    <li>Fumarase</li>
+                    <li>Malate</li>
+                </ul>
+            </div>  
         </div>
     </div>
-
-    <div class="enzymes">
-        <h2>Enzymes</h2>
-        <ul>
-            <li>Citrate Synthase</li>
-            <li>Aconitase</li>
-            <li>Isocitrate Dehydrogenase</li>
-            <li>Alpha-Ketoglutarate Dehydrogenase</li>
-            <li>Succinyl-CoA Synthetase</li>
-            <li>Succinate Dehydrogenase</li>
-            <li>Fumarase</li>
-            <li>Malate Dehydrogenase</li>
-        </ul>
-    </div>  
-
+</body>
 
     <footer>
         <p></p>
