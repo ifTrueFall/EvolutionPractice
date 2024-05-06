@@ -11,7 +11,7 @@
     <meta name="description" content="Comparing bones with canvas">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Quiz</a></li>
             <li><a href="Bones.html">Bones compare</a></li>
         </ul>
     </nav>
@@ -20,6 +20,20 @@
 <body>
     <div class="ChimpvsHuman">
         <h1>Chimp vs Human</h1>
+		<p> Closest relative is, gorilla, chimpanzees, orangutans, with chimpanzees being the most closest to the hominin decendancy </p>
+        <div class="Cquestions">
+            <div class="question-container">
+                <div id="question1">
+                    <p>Q1. True or false; Hominid, is human ancestory up to and including apes. Hominin, is Human ancestor after seperation of the chimps </p>
+                    <ul>
+                        <input type="radio" id="answer1a" name="question1" value="a"> A. True
+                        <br />
+                        <input type="radio" id="answer1b" name="question1" value="b"> B. False
+                        <br />
+                    </ul>
+                    <p id="feedback1"></p>
+                </div>
+            </div>
         <div class="side-by-side-container" style="display: flex;">
             <div class="canvas-container" style="border: 1px solid black; box-shadow: 1px; width: 50%; height: 550px; float: left;"> 
                     <img src="src/chimpAndHum.jpg" alt="bones compare" style="width: 100%; height: 100%;">
@@ -56,6 +70,24 @@
     <footer>
         <p></p>
     </footer>
+<script>
+    function handleAnswerSelection(questionId, correctAnswer) {
+                        const questionElement = document.getElementById(questionId);
+                        const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
+                        const feedbackElement = questionElement.querySelector('p[id^="feedback"]');
+
+                        for (const radioButton of radioButtons) {
+                            radioButton.addEventListener('click', () => {
+                                if (radioButton.value === correctAnswer) {
+                                    feedbackElement.textContent = "Correct!";
+                                } else {
+                                    feedbackElement.textContent = "Incorrect. Please try again.";
+                                }
+                            });
+                        }
+                    }
+    handleAnswerSelection("question1", "a");
+</script>
 </body>
 
 </html>
